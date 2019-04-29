@@ -6,6 +6,7 @@
 
 		<!-- custom CSS stylesheet -->
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="style.css">
 
 		<title>CSS Mockup Activity</title>
 	</head>

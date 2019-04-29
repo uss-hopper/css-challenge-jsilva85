@@ -10,15 +10,55 @@ html, body {
 	box-sizing: border-box;
 }
 
+
+
 .container {
 	margin: 0 auto;
 	padding: 0 2rem;
 }
+div.instructions-wrapper {
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow:         3px 3px 5px 6px #ccc;
+	float right;
 
-.clearfix {
-	clear: both;
 }
 
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+section.about-me {
+	background-color: blue;
+	margin: fill;
+	border: darkgray;
+}
+span {
+	color: yellow;
+
+}
+div.container
+table, td, th {
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	height: 50px;
+}
+tr:nth-child(even){background-color: white}
+
+th {
+	background-color: darkslategray;
+	color: greenyellow;
+}
 /* create a responsive container */
 @media only screen and (min-width: 1200px) {
 	.container { width: 1170px; }
@@ -28,8 +68,64 @@ html, body {
 	.container { width: 970px; }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.container { width: 750px; }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+	.container { width: 300px; }
+}
+
+div.form-wrapper {
+	box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+input[type=submit]:hover {
+	background-color: blue;
+}
+
+.form-wrapper {
+	border-radius: 5px;
+	background-color: green;
+	padding: 20px;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /*****************************************************
@@ -62,5 +158,7 @@ body { width: 100%;}
 * * Attribute Selectors
 ******************************************************/
 
+div.form-wrapper {
 
+}
 
